@@ -1,0 +1,24 @@
+@echo off
+setlocal
+
+REM 終了させたいアプリのプロセス名を指定します
+set "app_name=Razer Synapse 3.exe"
+set "background_process1=Razer Synapse Service.exe"
+set "background_process2=Razer Synapse Service Process.exe"
+
+REM タスクマネージャーでプロセスを終了するためのコマンド
+set "taskkill_cmd=taskkill /F /IM"
+
+REM アプリとバックグラウンドプロセスを終了させる
+%taskkill_cmd% "%app_name%"
+%taskkill_cmd% "%background_process1%"
+%taskkill_cmd% "%background_process2%"
+
+echo All specified tasks have been terminated.
+
+REM アプリとバックグラウンドプロセスを再起動する
+start "" "C:\Program Files (x86)\Razer\Synapse3\WPFUI\Framework\Razer Synapse 3 Host\Razer Synapse 3.exe"
+
+echo All specified tasks have been restarted.
+
+endlocal
