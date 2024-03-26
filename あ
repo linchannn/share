@@ -1,0 +1,18 @@
+JavaScriptを使用して同様の操作を実行する場合、ブラウザの開発者ツールを使用してコンソールでJavaScriptコードを実行する方法があります。以下はその例です。
+
+1. ブラウザで対象のWebサイトを開きます。
+2. ブラウザの開発者ツールを開きます（一般的には、F12キーを押すか、右クリックして「検証」または「Inspect」を選択します）。
+3. ブラウザのコンソールタブに移動します。
+4. コンソールにJavaScriptコードを入力してEnterキーを押して実行します。
+
+以下は、JavaScriptを使用して指定された操作を実行する例です。
+
+```javascript
+// name="zai"のセレクト要素でvalue="zais"のオプションを選択する
+document.querySelector('select[name="zai"]').value = "zais";
+
+// name="zaik"が付けられたsubmit属性のinput要素をクリックする
+document.querySelector('input[name="zaik"][type="submit"]').click();
+```
+
+これにより、指定されたWebサイトでJavaScriptを使用して要件を満たす操作を実行できます。ただし、この方法は手動で実行する必要があります。自動化する場合は、PythonやSeleniumのようなツールを使用することが一般的です。
