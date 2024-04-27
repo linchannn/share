@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { VBtn } from 'vuetify/components/VBtn';
+import { VBtn } from 'vuetify/components/VBtn'
 </script>
 
-<template>
-  <v-btn>V Button</v-btn>
+<template lang="pug">
+v-btn ぱぐ
 </template>
 <style scoped></style>
