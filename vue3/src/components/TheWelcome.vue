@@ -1,6 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { VBtn } from 'vuetify/components/VBtn';
+</script>
 
 <template>
-  <h1>hhhh</h1>
+  <v-btn>V Button</v-btn>
 </template>
 <style scoped></style>
