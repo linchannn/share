@@ -3,23 +3,23 @@ v-container(fluid)
   div.dashboard-pannel
     v-row
       v-col
-        v-card(color="white")
+        v-card
           p テナントID
       v-col(cols="9", align="right")
-        v-card(color="white")
+        v-card
           p aaa
     v-row
       v-col
-        v-card(color="white")
+        v-card
           p 質問回数
       v-col
-        v-card(color="white")
+        v-card
           p 新規登録ファイル数
       v-col
-        v-card(color="white")
+        v-card
           p 新規登録ファイル容量
       v-col
-        v-card(color: "white")
+        v-card
           p ストレージ容量
 </template>
 
@@ -28,5 +28,8 @@ v-container(fluid)
 <style scoped>
 .dashboard-pannel {
   background-color: gray;
+}
+.dashboard-card {
+  background-color: white;
 }
 </style>
