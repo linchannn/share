@@ -3,8 +3,10 @@ v-container(fluid)
   div.dashboard-pannel
     v-row
       v-col
-        v-card
-          p テナントID
+        v-card.pa-4(outlined)
+          v-card-title.subtitle-1 テナントID
+          v-card-text
+            v-label.body-1 sample
       v-col(cols="9", align="right")
         v-card
           p aaa
@@ -29,7 +31,18 @@ v-container(fluid)
 .dashboard-pannel {
   background-color: gray;
 }
-.dashboard-card {
+/* 背景色を白に設定 */
+.v-card {
   background-color: white;
+}
+
+/* カードタイトルのフォントサイズを小さく設定 */
+.v-card-title {
+  font-size: 0.875rem; /* 14px */
+}
+
+/* カードコンテンツのフォントサイズを通常に設定 */
+.v-label {
+  font-size: 1rem; /* 16px */
 }
 </style>
